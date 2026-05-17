@@ -1,0 +1,27 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+<p>@message</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="ShowMessage">押してね！</button>
+
+@code {
+    private int currentCount = 0;
+    private string message = "";
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void ShowMessage()
+    {
+        this.message = "こんにちは！";
+        Console.WriteLine("コンソールでこんにちは");
+    }
+}
