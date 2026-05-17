@@ -2,6 +2,8 @@
 
 テストプロジェクト。
 
+表示先は [ExBlazorWebAssembly](https://gplayer2022.github.io/ExBlazorGHPages/) 。
+
 実際のトップページの中身。
 
 ```html
